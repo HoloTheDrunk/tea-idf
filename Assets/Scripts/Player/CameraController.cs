@@ -1,54 +1,63 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Player
+namespace Player
 {
-	public class CameraController : MonoBehaviour
-	{
-		[Header("Settings")] //
-		public float mouseSensitivity = 5;
-		private float _mouseX, _mouseY;
+    public class CameraController : MonoBehaviour
+    {
+        [Header("Settings")] //
+        public float mouseSensitivity = 5;
 
-		[Header("Player info")] //
-		public Transform player;
-		public float playerHeight;
+        private float _mouseX, _mouseY;
 
-		private bool _tilted = false;
+        [Header("Player info")] //
+        public Transform player;
 
-		// Start is called before the first frame update
-		void Start()
-		{
-			Cursor.visible = false;
-			Cursor.lockState = CursorLockMode.Locked;
-		}
+        public float playerHeight;
 
-		void LateUpdate()
-		{
-			transform.position = player.position + Vector3.up * playerHeight;
-			CameraControl();
-		}
+        private float _tiltGoal;
 
-		private void CameraControl()
-		{
-			_mouseX += Input.GetAxis("Mouse X") * mouseSensitivity;
-			_mouseY -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-			_mouseY = Mathf.Clamp(_mouseY, -35, 60);
+        public float TiltGoal
+        {
+            get => _tiltGoal;
+            set => _tiltGoal = value;
+        }
 
-			transform.rotation = Quaternion.Euler(_mouseY, _mouseX, 0);
-		}
+        // Start is called before the first frame update
+        void Start()
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
 
-		public void Tilt(int tilt)
-		{
-			if (!_tilted)
-			{
-				transform.RotateAround(transform.position, transform.forward, tilt * 15f);
-				_tilted = true;
-			}
-			else
-			{
-				if (tilt == 0)
-					_tilted = false;
-			}
-		}
-	}
+        void LateUpdate()
+        {
+            transform.position = player.position + Vector3.up * playerHeight;
+            CameraControl();
+            Tilt();
+        }
+
+        private void CameraControl()
+        {
+            _mouseX += Input.GetAxis("Mouse X") * mouseSensitivity;
+            _mouseY -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+            _mouseY = Mathf.Clamp(_mouseY, -89f, 89f);
+
+            transform.rotation = Quaternion.Euler(_mouseY, _mouseX, 0);
+        }
+
+        private void Tilt()
+        {
+            transform.RotateAround(player.position, player.forward, _tiltGoal);
+            // if (!_tilted)
+            // {
+            // 	transform.RotateAround(player.position, player.forward, _tiltGoal);
+            // 	_tilted = true;
+            // }
+            // else
+            // {
+            // 	if (Mathf.Abs(_tiltGoal) < 0.1f)
+            // 		_tilted = false;
+            // }
+        }
+    }
 }
