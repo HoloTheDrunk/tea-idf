@@ -221,7 +221,7 @@ Rigidbody:
   m_GameObject: {fileID: 6026912297953234821}
   serializedVersion: 2
   m_Mass: 75
-  m_Drag: 1
+  m_Drag: 0
   m_AngularDrag: 1.5
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -240,9 +240,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78829ef076643e419d196bdd4f0594d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 500
-  jumpForce: 25
+  movementSpeed: 125
+  maxRunSpeed: 5
+  jumpForce: 50
   isGrounded: 0
+  jumpCooldown: 0.25
+  dragVector: {x: 10, y: 10, z: 10}
+  wallrideTilt: 15
   mainCamera: {fileID: 0}
   fovCurve:
     serializedVersion: 2
@@ -259,8 +263,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 2
-      outSlope: 2
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -285,5 +289,3 @@ MonoBehaviour:
   jumping: 0
   sprinting: 0
   crouching: 0
-  canJump: 0
-  jumpCooldown: 0.1

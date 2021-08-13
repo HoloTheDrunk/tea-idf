@@ -48,21 +48,8 @@ namespace Player
 
         private void Tilt()
         {
-            if (_curTilt - _tiltGoal > 1f)
-            {
-                _curTilt = Mathf.Lerp(_curTilt, _tiltGoal, 0.1f);
-                transform.RotateAround(player.position, player.forward, _curTilt);
-            }
-            // if (!_tilted)
-            // {
-            // 	transform.RotateAround(player.position, player.forward, _tiltGoal);
-            // 	_tilted = true;
-            // }
-            // else
-            // {
-            // 	if (Mathf.Abs(_tiltGoal) < 0.1f)
-            // 		_tilted = false;
-            // }
+            _curTilt = Mathf.Lerp(_curTilt, _tiltGoal, 0.1f);
+            transform.RotateAround(player.position, player.forward, _curTilt);
         }
     }
 }

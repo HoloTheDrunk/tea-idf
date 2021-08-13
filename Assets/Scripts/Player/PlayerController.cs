@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Player
 {
@@ -26,6 +25,8 @@ namespace Player
 
         [Range(0f, 100f)] public float jumpForce;
         [HideInInspector] public bool isGrounded;
+        public float jumpCooldown;
+        private float _jumpTimer;
 
         [Tooltip("Percent values between 0 and 100.")]
         public Vector3 dragVector;
@@ -50,7 +51,10 @@ namespace Player
         public void Start()
         {
             _rb = GetComponent<Rigidbody>();
+
             _userInput = GetComponent<UserInput>();
+            _jumpTimer = jumpCooldown;
+
             _leftWall = new RaycastResult();
             _rightWall = new RaycastResult();
             _backWall = new RaycastResult();
@@ -59,15 +63,19 @@ namespace Player
         public void FixedUpdate()
         {
             isGrounded = IsGrounded();
+            _jumpTimer = Mathf.Clamp(_jumpTimer - Time.fixedDeltaTime, 0f, jumpCooldown);
 
-            transform.localRotation = Quaternion.Euler(0, transform.localEulerAngles.y, 0);
+            bool isTouchingWall = _leftWall.status || _rightWall.status || _backWall.status;
+
+            // transform.localRotation = Quaternion.Euler(0, transform.localEulerAngles.y, 0);
             if (isGrounded)
             {
-                // Check possibility of jump if the user is trying to jump
-                if (_userInput.jumping && _userInput.canJump)
+                if (_userInput.jumping)
                 {
-                    _rb.AddForce(Vector3.up * (jumpForce * JumpForceMult), ForceMode.Impulse);
+                    Jump(Vector3.up * (jumpForce * JumpForceMult));
                 }
+
+                (_leftWall.status, _rightWall.status, _backWall.status) = (false, false, false);
             }
             else
             {
@@ -78,19 +86,17 @@ namespace Player
                 _backWall.status = Physics.Raycast(transform.position, -transform.forward, out _backWall.hitInfo,
                     0.75f, 1 << LayerMask.NameToLayer("Buildings"));
 
-                _rb.useGravity = !(_leftWall.status || _rightWall.status);
-                if (_leftWall.status || _rightWall.status || _backWall.status)
+                if (isTouchingWall && _userInput.jumping)
                 {
-                    if (_userInput.jumping && _userInput.canJump)
-                        _rb.AddForce((transform.forward + transform.up) * (jumpForce * JumpForceMult),
-                            ForceMode.Impulse);
+                    Vector3 wallNormalAddition = (_leftWall.status ? _leftWall.hitInfo.normal : Vector3.zero) +
+                                                 (_rightWall.status ? _rightWall.hitInfo.normal : Vector3.zero) +
+                                                 (_backWall.status ? _backWall.hitInfo.normal : Vector3.zero);
+                    Jump((transform.forward + transform.up + wallNormalAddition) * (jumpForce * JumpForceMult));
                 }
             }
 
-            if (!_rb.useGravity)
-            {
-                _rb.AddForce(Physics.gravity * _rb.mass / 3f);
-            }
+            _userInput.x = Mathf.Abs(_rb.velocity.x) > maxRunSpeed ? 0f : _userInput.x;
+            _userInput.y = Mathf.Abs(_rb.velocity.z) > maxRunSpeed ? 0f : _userInput.y;
 
             _rb.AddForce(transform.right * (_userInput.x * Time.fixedDeltaTime * movementSpeed * MovSpeedMult));
             _rb.AddForce(transform.forward * (_userInput.y * Time.fixedDeltaTime * movementSpeed * MovSpeedMult));
@@ -99,7 +105,11 @@ namespace Player
             // https://answers.unity.com/questions/233850/rigidbody-making-drag-affect-only-horizontal-speed.html
             Vector3 vel = _rb.velocity;
             vel.x *= 1f - dragVector.x / (100f * (isGrounded ? 1f : 2f));
-            vel.y *= 1f - dragVector.y / (100f * (isGrounded ? 1f : 2f));
+            if (vel.y < 0f && isTouchingWall)
+            {
+                vel.y *= 1f - dragVector.y / 100f;
+            }
+
             vel.z *= 1f - dragVector.z / (100f * (isGrounded ? 1f : 2f));
             _rb.velocity = vel;
         }
@@ -119,7 +129,7 @@ namespace Player
                 {
                     Outline itemOutline = hit.transform.gameObject.AddComponent<Outline>();
                     itemOutline.OutlineMode = Outline.Mode.OutlineVisible;
-                    itemOutline.OutlineColor = Color.cyan; //new Color(255, 166, 13);
+                    itemOutline.OutlineColor = Color.cyan;
                     itemOutline.OutlineWidth = 6;
                 }
 
@@ -177,6 +187,15 @@ namespace Player
             return Physics.Raycast(transform.position, Vector3.down, transform.localScale.y * 1.1f);
         }
 
+        private void Jump(Vector3 direction)
+        {
+            if (_jumpTimer < 0f)
+            {
+                _jumpTimer = jumpCooldown;
+                _rb.AddForce(direction, ForceMode.Impulse);
+            }
+        }
+
         public void OnDrawGizmos()
         {
             Gizmos.color = Color.blue;
@@ -190,7 +209,7 @@ namespace Player
                     (false, true, _) => Color.green,
                     (true, true, _) => Color.yellow,
                 };
-            Gizmos.DrawSphere(transform.position, .6f);
+            Gizmos.DrawSphere(transform.position + transform.up * 1.5f, .5f);
         }
     }
 }
