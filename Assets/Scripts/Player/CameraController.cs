@@ -15,6 +15,7 @@ namespace Player
         public float playerHeight;
 
         private float _tiltGoal;
+        private float _curTilt;
 
         public float TiltGoal
         {
@@ -47,7 +48,11 @@ namespace Player
 
         private void Tilt()
         {
-            transform.RotateAround(player.position, player.forward, _tiltGoal);
+            if (_curTilt - _tiltGoal > 1f)
+            {
+                _curTilt = Mathf.Lerp(_curTilt, _tiltGoal, 0.1f);
+                transform.RotateAround(player.position, player.forward, _curTilt);
+            }
             // if (!_tilted)
             // {
             // 	transform.RotateAround(player.position, player.forward, _tiltGoal);

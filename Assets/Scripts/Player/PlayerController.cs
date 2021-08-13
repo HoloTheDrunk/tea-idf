@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Player
 {
-    struct WallInfo
+    struct RaycastResult
     {
         public RaycastHit hitInfo;
         public bool status;
@@ -11,7 +12,7 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         // Constants
-        private const float MovSpeedMult = 100f;
+        private const float MovSpeedMult = 1000f;
         private const float JumpForceMult = 10f;
 
         // Input
@@ -21,11 +22,17 @@ namespace Player
         [Range(0f, 1000f)]
         public float movementSpeed;
 
+        [Range(0, 20)] public float maxRunSpeed;
+
         [Range(0f, 100f)] public float jumpForce;
         [HideInInspector] public bool isGrounded;
 
-        private WallInfo _leftWall;
-        private WallInfo _rightWall;
+        [Tooltip("Percent values between 0 and 100.")]
+        public Vector3 dragVector;
+
+        private RaycastResult _leftWall;
+        private RaycastResult _rightWall;
+        private RaycastResult _backWall;
         public float wallrideTilt = 15f;
 
         // Physics
@@ -44,23 +51,23 @@ namespace Player
         {
             _rb = GetComponent<Rigidbody>();
             _userInput = GetComponent<UserInput>();
-            _leftWall = new WallInfo();
-            _rightWall = new WallInfo();
+            _leftWall = new RaycastResult();
+            _rightWall = new RaycastResult();
+            _backWall = new RaycastResult();
         }
 
         public void FixedUpdate()
         {
             isGrounded = IsGrounded();
 
-            // Counter skid
-            _rb.AddForce(-2 * _rb.velocity);
-
             transform.localRotation = Quaternion.Euler(0, transform.localEulerAngles.y, 0);
             if (isGrounded)
             {
                 // Check possibility of jump if the user is trying to jump
                 if (_userInput.jumping && _userInput.canJump)
+                {
                     _rb.AddForce(Vector3.up * (jumpForce * JumpForceMult), ForceMode.Impulse);
+                }
             }
             else
             {
@@ -68,15 +75,15 @@ namespace Player
                     0.75f, 1 << LayerMask.NameToLayer("Buildings"));
                 _leftWall.status = Physics.Raycast(transform.position, -transform.right, out _leftWall.hitInfo,
                     0.75f, 1 << LayerMask.NameToLayer("Buildings"));
-
+                _backWall.status = Physics.Raycast(transform.position, -transform.forward, out _backWall.hitInfo,
+                    0.75f, 1 << LayerMask.NameToLayer("Buildings"));
 
                 _rb.useGravity = !(_leftWall.status || _rightWall.status);
-                if (_leftWall.status || _rightWall.status)
+                if (_leftWall.status || _rightWall.status || _backWall.status)
                 {
                     if (_userInput.jumping && _userInput.canJump)
-                        _rb.AddForce(
-                            (Vector3.up + transform.right * mainCamera.GetComponent<CameraController>().TiltGoal) *
-                            (jumpForce * JumpForceMult), ForceMode.Impulse);
+                        _rb.AddForce((transform.forward + transform.up) * (jumpForce * JumpForceMult),
+                            ForceMode.Impulse);
                 }
             }
 
@@ -87,6 +94,14 @@ namespace Player
 
             _rb.AddForce(transform.right * (_userInput.x * Time.fixedDeltaTime * movementSpeed * MovSpeedMult));
             _rb.AddForce(transform.forward * (_userInput.y * Time.fixedDeltaTime * movementSpeed * MovSpeedMult));
+
+            // Credit to:
+            // https://answers.unity.com/questions/233850/rigidbody-making-drag-affect-only-horizontal-speed.html
+            Vector3 vel = _rb.velocity;
+            vel.x *= 1f - dragVector.x / (100f * (isGrounded ? 1f : 2f));
+            vel.y *= 1f - dragVector.y / (100f * (isGrounded ? 1f : 2f));
+            vel.z *= 1f - dragVector.z / (100f * (isGrounded ? 1f : 2f));
+            _rb.velocity = vel;
         }
 
         public void Update()
@@ -121,34 +136,26 @@ namespace Player
 
         public void LateUpdate()
         {
+            CameraController mainCameraController = mainCamera.GetComponent<CameraController>();
             if (!isGrounded)
             {
                 if (_leftWall.status || _rightWall.status)
                 {
-                    if (_leftWall.status && _rightWall.status)
+                    mainCameraController.TiltGoal = (_leftWall.status, _rightWall.status) switch
                     {
-                        // In-between walls
-                        mainCamera.GetComponent<CameraController>().TiltGoal = 0f;
-                    }
-                    else if (_rightWall.status)
-                    {
-                        // Wall on the right only
-                        mainCamera.GetComponent<CameraController>().TiltGoal = wallrideTilt;
-                    }
-                    else
-                    {
-                        // Wall ont the left only
-                        mainCamera.GetComponent<CameraController>().TiltGoal = -wallrideTilt;
-                    }
+                        (true, false) => -wallrideTilt,
+                        (false, true) => wallrideTilt,
+                        _ => 0f
+                    };
                 }
                 else
                 {
-                    mainCamera.GetComponent<CameraController>().TiltGoal = 0f;
+                    mainCameraController.TiltGoal = 0f;
                 }
             }
             else
             {
-                mainCamera.GetComponent<CameraController>().TiltGoal = 0f;
+                mainCameraController.TiltGoal = 0f;
             }
 
             // Rotate to follow camera rotation
@@ -175,12 +182,13 @@ namespace Player
             Gizmos.color = Color.blue;
             Gizmos.DrawLine(transform.position, transform.position - Vector3.up * transform.localScale.y * 1.1f);
             Gizmos.color =
-                (_leftWall.status, _rightWall.status) switch
+                (_leftWall.status, _rightWall.status, _backWall.status) switch
                 {
-                    (false, false) => Color.red,
-                    (true, false) => Color.blue,
-                    (false, true) => Color.green,
-                    (true, true) => Color.yellow,
+                    (false, false, false) => Color.red,
+                    (false, false, true) => Color.magenta,
+                    (true, false, _) => Color.blue,
+                    (false, true, _) => Color.green,
+                    (true, true, _) => Color.yellow,
                 };
             Gizmos.DrawSphere(transform.position, .6f);
         }

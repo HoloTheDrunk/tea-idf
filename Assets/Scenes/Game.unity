@@ -753,11 +753,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 606610725, guid: e5d11895432d41841b75ff3eade3af5a, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781582388191676045, guid: e5d11895432d41841b75ff3eade3af5a,
+        type: 3}
+      propertyPath: jumpForce
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1781582388191676045, guid: e5d11895432d41841b75ff3eade3af5a,
         type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1138006977}
+    - target: {fileID: 1781582388191676045, guid: e5d11895432d41841b75ff3eade3af5a,
+        type: 3}
+      propertyPath: maxRunSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781582388191676045, guid: e5d11895432d41841b75ff3eade3af5a,
+        type: 3}
+      propertyPath: dragVector.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781582388191676045, guid: e5d11895432d41841b75ff3eade3af5a,
+        type: 3}
+      propertyPath: dragVector.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781582388191676045, guid: e5d11895432d41841b75ff3eade3af5a,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 125
+      objectReference: {fileID: 0}
     - target: {fileID: 6026912297953234821, guid: e5d11895432d41841b75ff3eade3af5a,
         type: 3}
       propertyPath: m_Name
