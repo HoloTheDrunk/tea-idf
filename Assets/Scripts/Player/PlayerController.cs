@@ -63,7 +63,7 @@ namespace Player
         public void FixedUpdate()
         {
             isGrounded = IsGrounded();
-            _jumpTimer = Mathf.Clamp(_jumpTimer - Time.fixedDeltaTime, 0f, jumpCooldown);
+            _jumpTimer = Mathf.Clamp(_jumpTimer - Time.fixedDeltaTime, -1f, jumpCooldown);
 
             bool isTouchingWall = _leftWall.status || _rightWall.status || _backWall.status;
 
