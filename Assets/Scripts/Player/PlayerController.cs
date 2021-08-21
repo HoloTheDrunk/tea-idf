@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using Actionable;
+using UnityEngine;
 
 namespace Player
 {
     struct RaycastResult
     {
-        public RaycastHit hitInfo;
-        public bool status;
+        public RaycastHit HitInfo;
+        public bool Status;
     }
 
     public class PlayerController : MonoBehaviour
@@ -65,8 +66,8 @@ namespace Player
             isGrounded = IsGrounded();
             _jumpTimer = Mathf.Clamp(_jumpTimer - Time.fixedDeltaTime, -1f, jumpCooldown);
 
-            bool isTouchingWall = _leftWall.status || _rightWall.status || _backWall.status;
-
+            bool isTouchingWall;
+            
             // transform.localRotation = Quaternion.Euler(0, transform.localEulerAngles.y, 0);
             if (isGrounded)
             {
@@ -75,22 +76,25 @@ namespace Player
                     Jump(Vector3.up * (jumpForce * JumpForceMult));
                 }
 
-                (_leftWall.status, _rightWall.status, _backWall.status) = (false, false, false);
+                (_leftWall.Status, _rightWall.Status, _backWall.Status) = (false, false, false);
+                isTouchingWall = false;
             }
             else
             {
-                _rightWall.status = Physics.Raycast(transform.position, transform.right, out _rightWall.hitInfo,
+                _rightWall.Status = Physics.Raycast(transform.position, transform.right, out _rightWall.HitInfo,
                     0.75f, 1 << LayerMask.NameToLayer("Buildings"));
-                _leftWall.status = Physics.Raycast(transform.position, -transform.right, out _leftWall.hitInfo,
+                _leftWall.Status = Physics.Raycast(transform.position, -transform.right, out _leftWall.HitInfo,
                     0.75f, 1 << LayerMask.NameToLayer("Buildings"));
-                _backWall.status = Physics.Raycast(transform.position, -transform.forward, out _backWall.hitInfo,
+                _backWall.Status = Physics.Raycast(transform.position, -transform.forward, out _backWall.HitInfo,
                     0.75f, 1 << LayerMask.NameToLayer("Buildings"));
+                
+                isTouchingWall = _leftWall.Status || _rightWall.Status || _backWall.Status;
 
                 if (isTouchingWall && _userInput.jumping)
                 {
-                    Vector3 wallNormalAddition = (_leftWall.status ? _leftWall.hitInfo.normal : Vector3.zero) +
-                                                 (_rightWall.status ? _rightWall.hitInfo.normal : Vector3.zero) +
-                                                 (_backWall.status ? _backWall.hitInfo.normal : Vector3.zero);
+                    Vector3 wallNormalAddition = (_leftWall.Status ? _leftWall.HitInfo.normal : Vector3.zero) +
+                                                 (_rightWall.Status ? _rightWall.HitInfo.normal : Vector3.zero) +
+                                                 (_backWall.Status ? _backWall.HitInfo.normal : Vector3.zero);
                     Jump((transform.forward + transform.up + wallNormalAddition) * (jumpForce * JumpForceMult));
                 }
             }
@@ -135,7 +139,10 @@ namespace Player
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    hit.transform.gameObject.GetComponent<UseAction>().triggered = true;
+                    //TODO Polymorph this call
+                    UseAction useAction = hit.transform.gameObject.GetComponent<UseAction>();
+                    if (useAction != null)
+                        useAction.triggered = true;
                 }
             }
             else
@@ -147,26 +154,12 @@ namespace Player
         public void LateUpdate()
         {
             CameraController mainCameraController = mainCamera.GetComponent<CameraController>();
-            if (!isGrounded)
+            mainCameraController.TiltGoal = (isGrounded, _leftWall.Status, _rightWall.Status) switch
             {
-                if (_leftWall.status || _rightWall.status)
-                {
-                    mainCameraController.TiltGoal = (_leftWall.status, _rightWall.status) switch
-                    {
-                        (true, false) => -wallrideTilt,
-                        (false, true) => wallrideTilt,
-                        _ => 0f
-                    };
-                }
-                else
-                {
-                    mainCameraController.TiltGoal = 0f;
-                }
-            }
-            else
-            {
-                mainCameraController.TiltGoal = 0f;
-            }
+                (false, true, false) => -wallrideTilt,
+                (false, false, true) => wallrideTilt,
+                _ => 0f
+            };
 
             // Rotate to follow camera rotation
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x,
@@ -201,7 +194,7 @@ namespace Player
             Gizmos.color = Color.blue;
             Gizmos.DrawLine(transform.position, transform.position - Vector3.up * transform.localScale.y * 1.1f);
             Gizmos.color =
-                (_leftWall.status, _rightWall.status, _backWall.status) switch
+                (_leftWall.Status, _rightWall.Status, _backWall.Status) switch
                 {
                     (false, false, false) => Color.red,
                     (false, false, true) => Color.magenta,
