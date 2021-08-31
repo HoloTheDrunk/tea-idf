@@ -164,7 +164,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a4607d4daff0f374ba80d23a646e2eb2, type: 2}
+  - {fileID: 2100000, guid: b8f6f92844efa7686b878a1c9ceb30e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   jumpForce: 50
   isGrounded: 0
   jumpCooldown: 0.25
+  jumpTimer: 0
   dragVector: {x: 10, y: 10, z: 10}
   wallrideTilt: 15
   mainCamera: {fileID: 0}

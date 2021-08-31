@@ -15,6 +15,7 @@ namespace Player
         private const float MovSpeedMult = 1000f;
         private const float JumpForceMult = 10f;
 
+        // Speed
         [Header("Movement")] // Movement
         [Range(0f, 1000f)]
         public float movementSpeed;
@@ -22,9 +23,12 @@ namespace Player
         [Range(0, 20)] public float minMaxRunSpeed;
         private float _curMaxRunSpeed;
 
+        // Jump
         [Range(0f, 100f)] public float jumpForce;
         [HideInInspector] public bool isGrounded;
         public float jumpCooldown;
+        [SerializeField]
+        private float jumpTimer;
 
         [Tooltip("Percent values between 0 and 100.")]
         public Vector3 dragVector;
@@ -36,16 +40,16 @@ namespace Player
 
         public AnimationCurve fovCurve;
 
-        // Items and inventory
+        // Items
         private Transform _aimedAtItem;
-        private RaycastResult _backWall;
-        private float _jumpTimer;
-
-        private RaycastResult _leftWall;
 
         // Physics
         private Rigidbody _rb;
+        
+        // Wall hits
         private RaycastResult _rightWall;
+        private RaycastResult _backWall;
+        private RaycastResult _leftWall;
 
         // Input
         private UserInput _userInput;
@@ -56,7 +60,7 @@ namespace Player
             _rb = GetComponent<Rigidbody>();
 
             _userInput = GetComponent<UserInput>();
-            _jumpTimer = jumpCooldown;
+            jumpTimer = jumpCooldown;
 
             _leftWall = new RaycastResult();
             _rightWall = new RaycastResult();
@@ -99,7 +103,7 @@ namespace Player
         public void FixedUpdate()
         {
             isGrounded = IsGrounded();
-            _jumpTimer = Mathf.Clamp(_jumpTimer - Time.fixedDeltaTime, -1f, jumpCooldown);
+            jumpTimer = Mathf.Clamp(jumpTimer - Time.fixedDeltaTime, -1f, jumpCooldown);
 
             bool isTouchingWall;
 
@@ -204,9 +208,9 @@ namespace Player
 
         private void Jump(Vector3 direction)
         {
-            if (_jumpTimer < 0f)
+            if (jumpTimer < 0f)
             {
-                _jumpTimer = jumpCooldown;
+                jumpTimer = jumpCooldown;
                 _rb.AddForce(direction, ForceMode.Impulse);
             }
         }

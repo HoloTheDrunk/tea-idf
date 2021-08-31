@@ -14,7 +14,7 @@ namespace World
         public SchoolInfo[] Schools;
         public int schoolToLoad;
 
-        public void Start()
+        public void Awake()
         {
             Schools = JsonConvert.DeserializeObject<SchoolInfo[]>(IoFile.ReadAllText("Assets/Data/schoolData.json"));
             Debug.Log(Schools[schoolToLoad]);
@@ -36,7 +36,7 @@ namespace World
             const string url = "https://overpass-api.de/api/interpreter";
             string query = @$"[out:json][timeout:10];
 (  
-  way(around: 100, {Schools[schoolToLoad].Coordinates.Longitude}, {Schools[schoolToLoad].Coordinates.Latitude})[""building""=""yes""]->._;
+  way(around: 150, {Schools[schoolToLoad].Coordinates.Longitude}, {Schools[schoolToLoad].Coordinates.Latitude})[""building""=""yes""]->._;
   ._>->._; 
 ); 
 ._ out body;".Replace(Environment.NewLine, "");
@@ -44,6 +44,7 @@ namespace World
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(url);
 
+            // 2D outlines of buildings on the ground
             List<List<Vector3>> buildingOutlines = new List<List<Vector3>>();
             HttpResponseMessage response = client.GetAsync($"?data={query}").Result;
             if (response.IsSuccessStatusCode)
@@ -53,8 +54,8 @@ namespace World
 
                 int i = 0;
 
-                // Get scaled nodes.
-                for(; i < output.Elements.Count && output.Elements[i].Type == "node"; i++)
+                // Process and scale nodes.
+                for (; i < output.Elements.Count && output.Elements[i].Type == "node"; i++)
                 {
                     Element element = output.Elements[i];
                     const double scaleFactor = 100_000d;
@@ -77,30 +78,10 @@ namespace World
 
                     buildingOutlines.Add(buildingOutline);
                 }
-
-                // Legacy
-                // foreach (Element element in output.Elements)
-                // {
-                //     if (element.Type == "node")
-                //     {
-                //         const double scaleFactor = 100_000d;
-                //         // Converting position from geographical coordinates to usable ones
-                //         double trueX = (Schools[schoolToLoad].Coordinates.Longitude - element.Lat) * scaleFactor;
-                //         double trueZ = (Schools[schoolToLoad].Coordinates.Latitude - element.Lon) * scaleFactor;
-                //
-                //         nodes[element.ID] = new Vector3((float) trueX, 0, (float) trueZ);
-                //     }
-                //     else if (element.Type == "way")
-                //     {
-                //         List<Vector3> buildingOutline = new List<Vector3>();
-                //         foreach (ulong id in element.Nodes)
-                //         {
-                //             buildingOutline.Add(nodes[id]);
-                //         }
-                //
-                //         buildingOutlines.Add(buildingOutline);
-                //     }
-                // }
+            }
+            else
+            {
+                Debug.LogError($"ERROR {response.StatusCode}: {response.ReasonPhrase}");
             }
 
             return buildingOutlines;
@@ -120,24 +101,45 @@ namespace World
 
             Debug.Log("Finished conversion.\nLoading...");
             Transform parent = GameObject.Find("Environment").transform.GetChild(2);
+            // for (int i = 0; i < parent.childCount; i++)
+            // {
+            //     Destroy(parent.GetChild(0).gameObject);
+            // }
             foreach (Building building in buildings)
             {
-                GameObject newBuilding =
-                    Instantiate(original: Resources.Load("Prefabs/Building"), parent: parent) as GameObject;
-
                 Mesh mesh = new Mesh();
 
+                // Vertices
                 mesh.vertices = building.Vertices.ToArray();
-                mesh.uv = new Vector2[building.Vertices.Count]; //TODO: find how to calculate proper UVs
+
+                // UV
+                Vector2[] uv = new Vector2[building.Vertices.Count]; //TODO: find how to calculate proper UVs
+                for (int i = 0; i < mesh.uv.Length - 3; i += 3)
+                {
+                    mesh.uv[i] = Vector2.zero;
+                    mesh.uv[i + 1] = Vector2.up;
+                    mesh.uv[i + 2] = Vector2.right;
+                }
+
+                mesh.uv = uv;
+
+                // Triangles
                 mesh.triangles = building.Triangles.ToArray();
+
+                // Mesh processing
                 mesh.RecalculateNormals();
-                mesh.RecalculateBounds();
+                //mesh.RecalculateBounds();
+
+                GameObject newBuilding =
+                    Instantiate(original: Resources.Load("Prefabs/Building"), parent: parent) as GameObject;
 
                 // Shouldn't ever be null but I need Rider to stop nagging me with that orange underline
                 if (newBuilding != null)
                 {
-                    newBuilding.GetComponent<MeshFilter>().mesh = mesh;
-                    newBuilding.GetComponent<MeshCollider>().sharedMesh = mesh;
+                    MeshFilter meshFilter = newBuilding.GetComponent<MeshFilter>();
+                    MeshCollider meshCollider = newBuilding.GetComponent<MeshCollider>();
+                    meshFilter.mesh = mesh;
+                    meshCollider.sharedMesh = mesh;
                 }
             }
 
