@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace Actionable
@@ -8,14 +7,6 @@ namespace Actionable
     {
         [HideInInspector] public bool triggered;
 
-        public void Trigger()
-        {
-            if (!triggered)
-                triggered = true;
-            else
-                StartCoroutine(nameof(Reset));
-        }
-
         // ReSharper disable once Unity.IncorrectMethodSignature
         // It's actually the right one bucko
         private IEnumerator Reset()
@@ -23,6 +14,14 @@ namespace Actionable
             triggered = false;
             yield return new WaitForEndOfFrame();
             triggered = true;
+        }
+
+        public void Trigger()
+        {
+            if (!triggered)
+                triggered = true;
+            else
+                StartCoroutine(nameof(Reset));
         }
 
         protected abstract IEnumerator RunAnimation(float duration = 1f);

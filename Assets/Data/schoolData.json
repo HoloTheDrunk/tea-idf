@@ -1,0 +1,1377 @@
+[
+  {
+    "id": 0,
+    "ranking": 5,
+    "name": "Télécom Paris",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.713069471106685,
+      "latitude": 2.200849576336125
+    },
+    "womanprop": 19,
+    "imagepath": "telecomparis",
+    "website": "https://www.telecom-paris.fr/",
+    "fees": 2650,
+    "socials": {
+      "instagram": "https://www.instagram.com/telecom_paris/?hl=fr",
+      "twitter": "https://twitter.com/TelecomParis_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/TelecomParis/"
+    },
+    "resume": {
+      "approxAddress": "Palaiseau",
+      "since": 1878,
+      "numberOfStudents": 1360,
+      "numberOfForeigners": -1,
+      "history": "In 1845, Alphonse Foy, director of telegraphic lines, proposed a school specializing in telegraphy for Polytechnicians. However, his proposition was rejected. The school was founded on 12 July 1878 as the École professionnelle supérieure des postes et télégraphes (EPSPT). In 1912, the school's name was changed to École supérieure des postes et télégraphes (ESPT)",
+      "majors": [
+        "Data Science",
+        "Artificial Intelligence",
+        "Cybersecurity"
+      ],
+      "mailAdress": "contact@telecom-paris.fr",
+      "phone": 33175319201
+    }
+  },
+  {
+    "id": 1,
+    "ranking": 8,
+    "name": "Ensta Paris",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.71078389272253,
+      "latitude": 2.217461325064383
+    },
+    "womanprop": 27,
+    "imagepath": "ensta",
+    "website": "https://www.ensta-paris.fr/",
+    "fees": 2650,
+    "socials": {
+      "instagram": "https://www.instagram.com/enstaparis/?hl=fr",
+      "twitter": "https://twitter.com/enstaparis?lang=fr",
+      "facebook": "https://www.facebook.com/ENSTA.Paris/"
+    },
+    "resume": {
+      "approxAddress": "Palaiseau",
+      "since": 1741,
+      "numberOfStudents": 897,
+      "numberOfForeigners": -1,
+      "history": "The ENSTA Paris, formerly known as the École nationale supérieure de techniques avancées (English: Superior National School of Advanced Techniques) is a prestigious French graduate school of engineering (école d'ingénieurs). Founded in 1741, it is the oldest grande école in France. It is located in Palaiseau in the south of Paris, on the Paris-Saclay campus, and is a constituent faculty of the Polytechnic Institute of Paris. Every year some 180 engineers graduate from the school.",
+      "majors": [
+        "Maritime Engineering",
+        "Cybersecurity",
+        "Artificial Intelligence",
+        "Innovation"
+      ],
+      "mailAdress": "sylvain.ferrari@ensta-paris.fr",
+      "phone": 33181871740
+    }
+  },
+  {
+    "id": 2,
+    "ranking": 8,
+    "name": "Ensae - Paris",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.711192068870055,
+      "latitude": 2.207574767392678
+    },
+    "womanprop": 27,
+    "imagepath": "ensae",
+    "website": "https://www.ensae.fr/",
+    "fees": 1850,
+    "socials": {
+      "instagram": "https://www.instagram.com/explore/locations/368800590238617/france/palaiseau-france/ensae-paris/?hl=fr",
+      "twitter": "https://twitter.com/ENSAEparis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ENSAE.IPPARIS/"
+    },
+    "resume": {
+      "approxAddress": "Palaiseau",
+      "since": 1942,
+      "numberOfStudents": 581,
+      "numberOfForeigners": -1,
+      "history": "Originally, the school was the brainchild of Henri-Louis Duhamel du Monceau, inspector general of the Navy. He had identified the need to give the Navy's master carpenters a theoretical education, particularly in mathematics and physics, which were making quick progress, so that they would have a clearer understanding of their trade.",
+      "majors": [
+        "Actuarial Science",
+        "Data Science"
+      ],
+      "mailAdress": "info@ensae.fr",
+      "phone": 33170266700
+    }
+  },
+  {
+    "id": 3,
+    "ranking": 9,
+    "name": "Télécom SudParis",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.625169778079965,
+      "latitude": 2.4433700800794025
+    },
+    "womanprop": 22,
+    "imagepath": "telecomsudparis",
+    "website": "https://www.telecom-sudparis.eu/",
+    "fees": 2650,
+    "socials": {
+      "instagram": "https://www.instagram.com/telecom_sudparis/?hl=fr",
+      "twitter": "https://twitter.com/TelecomSudParis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/TelecomSudParis"
+    },
+    "resume": {
+      "approxAddress": "Courcouronnes",
+      "since": 1979,
+      "numberOfStudents": 1000,
+      "numberOfForeigners": -1,
+      "history": "Founded in 2000 by Télécom SudParis and Institut Mines-Télécom Business School, the Télécom & Management SudParis Entrepreneurs incubator is also common to ENSIIE. Its goal is to host and support project leaders for the creation of innovative IT companies.",
+      "majors": [
+        "Computer Science",
+        "Optical Networks and Photonic Systems",
+        "Data Science"
+      ],
+      "mailAdress": "international@telecom-sudparis.eu ",
+      "phone": 3360764040
+    }
+  },
+  {
+    "id": 4,
+    "ranking": 17,
+    "name": "Efrei Paris",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.78877123047309,
+      "latitude": 2.3640523692466413
+    },
+    "womanprop": 19,
+    "imagepath": "efrei",
+    "website": "https://www.efrei.fr/",
+    "fees": 8880,
+    "socials": {
+      "instagram": "https://www.instagram.com/efrei_paris/?hl=fr",
+      "twitter": "https://twitter.com/Efrei_Paris?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/Efrei/"
+    },
+    "resume": {
+      "approxAddress": "Villejuif",
+      "since": 1986,
+      "numberOfStudents": 450,
+      "numberOfForeigners": -1,
+      "history": "The EFREI (École d'ingénieur généraliste en informatique et technologies du numérique) (Engineering School of Information and Digital Technologies) is a French private engineering school located in Villejuif, Île-de-France, at the south of Paris. Its courses, specializing in computer science and management, are taught with support from the state. ",
+      "majors": [
+        "Embedded Systems",
+        "Data Science",
+        "Machine Learning",
+        "Energie"
+      ],
+      "mailAdress": "informations@efrei.fr",
+      "phone": 33146776467
+    }
+  },
+  {
+    "id": 5,
+    "ranking": 16,
+    "name": "ISEP",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.845518232807926,
+      "latitude": 2.32807942692051
+    },
+    "womanprop": 20,
+    "imagepath": "isep",
+    "website": "https://www.isep.fr/",
+    "fees": 8724,
+    "socials": {
+      "instagram": "https://www.instagram.com/isepparis/?hl=fr",
+      "twitter": "https://twitter.com/ISEP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ISEP.Paris/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1955,
+      "numberOfStudents": 1500,
+      "numberOfForeigners": -1,
+      "history": "ISEP was created by the Institut Catholique de Paris in 1955, where Edouard Branly, then Professor of Physics, discovered radioconductors at the origin of wireless transmission (T.S.F). Since its inception, ISEP's educational project has focused on high-level scientific and technical training that places a high priority on human training, which is essential for future responsible executives.",
+      "majors": [
+        "Embedded Systems",
+        "Software Engineering"
+      ],
+      "mailAdress": "info@isep.fr",
+      "phone": 33149545200
+    }
+  },
+  {
+    "id": 6,
+    "ranking": 7,
+    "name": "ESILV",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.89631386769784,
+      "latitude": 2.2358472250713337
+    },
+    "womanprop": 21,
+    "imagepath": "esilv",
+    "website": "https://www.esilv.fr/",
+    "fees": 8500,
+    "socials": {
+      "instagram": "https://www.instagram.com/esilv_paris/?hl=fr",
+      "twitter": "https://twitter.com/ESILVparis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ESILVparis/"
+    },
+    "resume": {
+      "approxAddress": "Courbevoie",
+      "since": 1995,
+      "numberOfStudents": 2700,
+      "numberOfForeigners": -1,
+      "history": "The Leonard de Vinci Engineering School (ESILV) is a five-year engineering school in Paris, France. It was placed 10th among French engineering schools Post-bac in the 2010 Le Point rankings. It is fully accredited to award the title of ingénieur by the French Commission of Engineering Titles. ESILV is part of the Pôle universitaire Léonard-de-Vinci. The director of the school is Professor Michel Bernadou.",
+      "majors": [
+        "Cybersecurity",
+        "Energy",
+        "Health Technology",
+        "Artificial Intelligence"
+      ],
+      "mailAdress": "contact@devinci.fr",
+      "phone": 33141167000
+    }
+  },
+  {
+    "id": 7,
+    "ranking": 10,
+    "name": "ECE",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.85163451353787,
+      "latitude": 2.287221669248997
+    },
+    "womanprop": 23,
+    "imagepath": "ece",
+    "website": "https://www.ece.fr/ecole-ingenieur/",
+    "fees": 9500,
+    "socials": {
+      "instagram": "url",
+      "twitter": "https://twitter.com/IngenieursECE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ECE.Paris/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1919,
+      "numberOfStudents": 25000,
+      "numberOfForeigners": -1,
+      "history": "The school was founded in Paris in 1919, under the name of Ecole Centrale de TSF (Télégraphie Sans Fil), in the aftermath of the First World War, under the leadership of a young petty officer, Eugène Poirot.",
+      "majors": [
+        "Energy",
+        "Health Technology",
+        "Transport & Mobilty",
+        "Embedded Systems"
+      ],
+      "mailAdress": "",
+      "phone": -1
+    }
+  },
+  {
+    "id": 8,
+    "ranking": 38,
+    "name": "ESIEE Paris",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.84036538242425,
+      "latitude": 2.5838397115768177
+    },
+    "womanprop": 22,
+    "imagepath": "esiee",
+    "website": "https://www.esiee.fr/",
+    "fees": 8100,
+    "socials": {
+      "instagram": "https://www.instagram.com/esieeparis/",
+      "twitter": "https://twitter.com/ESIEEPARIS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/esieeparis/"
+    },
+    "resume": {
+      "approxAddress": "Noisy-le-Grand",
+      "since": 1992,
+      "numberOfStudents": 1850,
+      "numberOfForeigners": -1,
+      "history": "ESIEE Paris (French: École Supérieure d'Ingénieurs en Électrotechnique et Électronique) is a Grande Ecole graduate school of engineering located in Marne-la-Vallée. The school was established in 1904 and is part of the ESIEE network of graduate schools. ESIEE Paris offers its students general engineering training with the aim of enabling them to design, produce and oversee complex industrial systems while meeting strict economic constraints and dealing with an international environment. To accomplish this, the school renders advanced scientific and technological training, which is frequently updated to keep pace with changes in the leading edge technologies and supplemented by its association with language, general culture, economics and humanities teaching.",
+      "majors": [
+        "Artificial Intelligence",
+        "Electronics"
+      ],
+      "mailAdress": "https://www.esiee.fr/fr/contact-international",
+      "phone": 33145926500
+    }
+  },
+  {
+    "id": 9,
+    "ranking": 44,
+    "name": "Cesi École d'ingénieurs",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.90338092244385,
+      "latitude": 2.19296054041507
+    },
+    "womanprop": 12,
+    "imagepath": "cesi",
+    "website": "https://ecole-ingenieurs.cesi.fr/",
+    "fees": 7500,
+    "socials": {
+      "instagram": "https://www.instagram.com/campus_cesi/",
+      "twitter": "https://twitter.com/CESIingenieurs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/CESIingenieurs/"
+    },
+    "resume": {
+      "approxAddress": "Nanterre",
+      "since": 1958,
+      "numberOfStudents": 5152,
+      "numberOfForeigners": -1,
+      "history": "The founding project of CESI relates to social and institutional innovation. Over time, CESI has remained anchored in its social values, and its new training courses, with the original values. In 1989, CESI was the first school to offer courses for engineers in apprenticeship.",
+      "majors": [
+        "Industrial Engineering",
+        "Civil Engineering",
+        "Embedded Systems"
+      ],
+      "mailAdress": "https://contact.cesi.fr/par-email/",
+      "phone": 33144192345
+    }
+  },
+  {
+    "id": 10,
+    "ranking": 47,
+    "name": "ENSIIE",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.62696340186135,
+      "latitude": 2.432410025061261
+    },
+    "womanprop": 17,
+    "imagepath": "ensiee",
+    "website": "https://www.ensiie.fr/",
+    "fees": 601,
+    "socials": {
+      "instagram": "https://www.instagram.com/ensiie.fr/?hl=fr",
+      "twitter": "https://twitter.com/ENSIIE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ENSIIE.91.68/"
+    },
+    "resume": {
+      "approxAddress": "Évry-Courcouronnes",
+      "since": 1968,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "Created in 1968 within the National Conservatory of Arts and Crafts, the Institute of Business Informatics (IIE) was first established in Paris, in the premises of the CNAM. ... On September 13, 2011, ENSIIE joined the network of associated schools of the Institut Mines-Télécom.",
+      "majors": [
+        "Artificial Intelligence",
+        "Cybersecurity",
+        "Video Game Design",
+        "Data Science"
+      ],
+      "mailAdress": "Vathana.lyvath@ensiie.fr",
+      "phone": 33169367350
+    }
+  },
+  {
+    "id": 11,
+    "ranking": 88,
+    "name": "Polytech Sorbonne",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.84677026816889,
+      "latitude": 2.354938284592262
+    },
+    "womanprop": 39,
+    "imagepath": "polytech_sorbonne",
+    "website": "https://www.polytech.sorbonne-universite.fr/",
+    "fees": 601,
+    "socials": {
+      "instagram": "https://www.instagram.com/polytechsorbonne/?hl=fr",
+      "twitter": "https://twitter.com/PolytechSorbonn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/PolytechSorbonne/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1985,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The school, born in 2005, is the result of the merger of two UPMC institutes: the Institute for the Training of Engineers in Electronic Techniques in Paris (IFITEP) founded in 1991; the Institute of Science and Technology (IST) founded in 1983.",
+      "majors": [
+        "Computer Science",
+        "Robotics",
+        "Mechanical Engineering"
+      ],
+      "mailAdress": "https://www.polytech.sorbonne-universite.fr/qui-contacter",
+      "phone": 33144277313
+    }
+  },
+  {
+    "id": 12,
+    "ranking": 15,
+    "name": "EPITA",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.81581797422478,
+      "latitude": 2.3628301404117873
+    },
+    "womanprop": 11,
+    "imagepath": "epita",
+    "website": "https://www.epita.fr/",
+    "fees": 10448,
+    "socials": {
+      "instagram": "https://www.instagram.com/epita.national/?hl=fr",
+      "twitter": "https://twitter.com/EPITA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/epita/"
+    },
+    "resume": {
+      "approxAddress": "Kremlin Bicetre",
+      "since": 1984,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "Created in 1984, it is a private higher education institution recognized by the State. It is a member of the Conférence des Grandes Ecoles (CGE), of the Union of Independent Grandes Ecoles (UGEI), of the Conference of Directors of French Engineering Schools (CDEFI) and belongs to the Institute of Technology pole of the IONIS group.",
+      "majors": [
+        "Computer Science",
+        "Artificial Intelligence"
+      ],
+      "mailAdress": "dayana.patel@epita.fr",
+      "phone": 330144080046
+    }
+  },
+  {
+    "id": 13,
+    "ranking": 57,
+    "name": "IPSA",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.81464443725002,
+      "latitude": 2.393687540411742
+    },
+    "womanprop": 18,
+    "imagepath": "ipsa",
+    "website": "https://www.ipsa.fr/",
+    "fees": 9030,
+    "socials": {
+      "instagram": "https://www.instagram.com/ipsa.aero/?hl=fr",
+      "twitter": "https://twitter.com/IPSA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ecole.ipsa/"
+    },
+    "resume": {
+      "approxAddress": "Ivry-sur-Seine",
+      "since": 1961,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "IPSA was created in 1961 in Paris by Michel Cazin, Maurice Pradier and Paul Lefort and was acquired in 1999 by the IONIS5 Group. In 2005, the title issued by the school was registered, after consulting the national commission for professional certification, in the National Directory of Professional Certifications at level I. The year 2006 saw the institute host the 6th European Congress of the Mars Society aimed at promoting the exploration of the planet Mars and the design of the Martian habitat.",
+      "majors": [
+        "Aeronautical Engineering"
+      ],
+      "mailAdress": "info@ipsa.fr",
+      "phone": 330184071515
+    }
+  },
+  {
+    "id": 14,
+    "ranking": 92,
+    "name": "Polytech Paris-Saclay",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.70919229361006,
+      "latitude": 2.171253555751236
+    },
+    "womanprop": 29,
+    "imagepath": "polytech_paris-saclay",
+    "website": "https://www.polytech.universite-paris-saclay.fr/",
+    "fees": 601,
+    "socials": {
+      "instagram": "url",
+      "twitter": "https://twitter.com/Polytech_Saclay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/PolytechParisSaclay/"
+    },
+    "resume": {
+      "approxAddress": "Orsay",
+      "since": 2004,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The École polytechnique universitaire of the University of Paris-Saclay, also known as Polytech Paris-Saclay (formerly the Institute for the training of engineers of the University of Paris-Sud 11 or IFIPS) is one of the 205 engineering schools French women accredited on September 1, 2019 to issue an engineering diploma. Integrated into the University of Paris-Saclay, located at the Maison de l'Ingénieur (building 620 of the Orsay Scientific Center) on the Orsay campus (at the heart of the University of Paris-Saclay and of CentraleSupélec), it is located in the Paris-Saclay technological cluster.",
+      "majors": [
+        "Robotics",
+        "Informatics",
+        "Energy"
+      ],
+      "mailAdress": "contact.polytech@universite-paris-saclay.fr",
+      "phone": 330169338600
+    }
+  },
+  {
+    "id": 15,
+    "ranking": 28,
+    "name": "Esme Sudria",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.84004716727125,
+      "latitude": 2.3096067115768197
+    },
+    "womanprop": 21,
+    "imagepath": "esme_sudria",
+    "website": "https://www.esme.fr/",
+    "fees": 9980,
+    "socials": {
+      "instagram": "https://www.instagram.com/esme.sudria/?hl=fr",
+      "twitter": "https://twitter.com/esmesudria?lang=fr",
+      "facebook": "https://www.facebook.com/ESME.Sudria/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1905,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The Special School of Mechanics and Electricity (usual name ESME Sudria), is one of the 205 French engineering schools accredited on September 1, 2019 to award an engineering diploma. It is a state-recognized private higher education institution that provides training in the fields of electrical engineering, electronics, telecommunications and IT. It is a member of the Conférence des grandes écoles (CGE), the union of independent grandes écoles (UGEI) and belongs to the IONIS group.",
+      "majors": [
+        "Innovation",
+        "Energy"
+      ],
+      "mailAdress": "contact@esme.fr",
+      "phone": 330156206200
+    }
+  },
+  {
+    "id": 16,
+    "ranking": 97,
+    "name": "ENSEA",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 49.03948162684108,
+      "latitude": 2.0721781615842896
+    },
+    "womanprop": 17,
+    "imagepath": "ensea",
+    "website": "https://www.ensea.fr/fr",
+    "fees": 601,
+    "socials": {
+      "instagram": "https://www.instagram.com/enseacergy/?hl=fr",
+      "twitter": "https://twitter.com/ensea1?lang=fr",
+      "facebook": "https://www.facebook.com/Ensea-136481359731543/"
+    },
+    "resume": {
+      "approxAddress": "Cergy",
+      "since": 1952,
+      "numberOfStudents": 750,
+      "numberOfForeigners": -1,
+      "history": "The National School of Electronics and its Applications (ENSEA) is one of 205 French engineering schools accredited on September 1, 2019 to award an engineering degree. General practitioner and public, located in Cergy-Pontoise, in Val-d'Oise, she is a member of the Conférence des grandes écoles (CGE), the conference of directors of French engineering schools (CDEFI) and the ComUE University Paris Seine, which brings together several higher education establishments on the Cergy campus such as ESSEC, UCP, EISTI or even SUPMECA. Since its creation in 1952, it has been empowered by the Engineering Titles Commission to award the ENSEA engineering diploma.",
+      "majors": [
+        "Integrated digital systems",
+        "Telecommunications & Networks"
+      ],
+      "mailAdress": "https://www.ensea.fr/en/node/59",
+      "phone": 33130736666
+    }
+  },
+  {
+    "id": 17,
+    "ranking": 97,
+    "name": "EIDD",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.826888906221654,
+      "latitude": 2.382716709725266
+    },
+    "womanprop": 29,
+    "imagepath": "eidd",
+    "website": "https://eidd.u-paris.fr/",
+    "fees": 601,
+    "socials": {
+      "instagram": "https://www.instagram.com/alumni_eidd/",
+      "twitter": "https://twitter.com/eiddparis?lang=fr",
+      "facebook": "https://www.facebook.com/AlumniEIDD/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 2011,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "In 2010, the University of Paris-VII was for the first time authorized by the CTI, for a period of 2 years, to issue engineering degrees in 3 specialties under student status: architecture of physical systems, Computing and materials and nanotechnologies. The school was not created until the following year by a decree of June 6, 2011.",
+      "majors": [
+        "Materials and nanotechnologies",
+        "Embedded Systems"
+      ],
+      "mailAdress": "eidd@univ-paris-diderot.fr",
+      "phone": 33157276125
+    }
+  },
+  {
+    "id": 18,
+    "ranking": 45,
+    "name": "ESEO",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.78318985808898,
+      "latitude": 2.2114149980822866
+    },
+    "womanprop": 17,
+    "imagepath": "eseo",
+    "website": "https://eseo.fr/en/",
+    "fees": 7600,
+    "socials": {
+      "instagram": "https://www.instagram.com/groupe_eseo/?hl=fr",
+      "twitter": "https://twitter.com/Groupe_ESEO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/GroupeESEO/?rf=111941925489993"
+    },
+    "resume": {
+      "approxAddress": "Vélizy-Villacoublay",
+      "since": 1956,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The Western School of Electronics (ESEO Group since 2006) is one of the 205 French engineering schools accredited on September 1, 2019 to award an engineering degree. The school is organized in the form of a non-profit association, recognized as being of public utility (EESPIG label), specializing in engineering training (Bac + 5) and Bachelor (Bac + 3) in computer science and electronics (formerly École Supérieure d'Electronique de l'Ouest). It is located in Angers, Dijon, Paris-Vélizy and Shanghai.",
+      "majors": [
+        "Health Technology",
+        "Energy",
+        "Data Science"
+      ],
+      "mailAdress": "information@eseo.fr",
+      "phone": 330172241020
+    }
+  },
+  {
+    "id": 19,
+    "ranking": 107,
+    "name": "ENSG Géomatique",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.84122775325983,
+      "latitude": 2.5873665134279342
+    },
+    "womanprop": 37,
+    "imagepath": "ensg_geomatique",
+    "website": "https://www.ensg.eu/Geomatique",
+    "fees": 1800,
+    "socials": {
+      "instagram": "https://www.instagram.com/explore/locations/286048440/?hl=fr",
+      "twitter": "https://twitter.com/ensg_ign?lang=fr",
+      "facebook": "https://www.facebook.com/ENSGeomatique/"
+    },
+    "resume": {
+      "approxAddress": "Champs-sur-Marne",
+      "since": 1941,
+      "numberOfStudents": 300,
+      "numberOfForeigners": -1,
+      "history": "The National School of Geographic Sciences, abbreviated as ENSG-Geomatics, is one of the 205 French engineering schools accredited on September 1, 2019 to award an engineering diploma1. She has been a member of Gustave Eiffel University since 2020. Managed by the National Institute of Geographic and Forest Information (IGN), its vocation is to train geomatics professionals at all possible levels, and in particular the technical staff of IGN. There are on average 300 students in initial training at the school throughout the year (all cycles combined).",
+      "majors": [
+        "Geomatics",
+        "Sustainable Development"
+      ],
+      "mailAdress": "https://www.ensg.eu/Contact-service-de-la-communication",
+      "phone": 33164153001
+    }
+  },
+  {
+    "id": 20,
+    "ranking": 106,
+    "name": "Esipe Marne-la-Valée",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.83941845344665,
+      "latitude": 2.5871490980844083
+    },
+    "womanprop": 24,
+    "imagepath": "esipe",
+    "website": "https://esipe.u-pem.fr/",
+    "fees": 610,
+    "socials": {
+      "instagram": "",
+      "twitter": "https://twitter.com/esipe_uge?lang=fr",
+      "facebook": "https://www.facebook.com/ESIPE/"
+    },
+    "resume": {
+      "approxAddress": "Champs-sur-Marne",
+      "since": 2018,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The higher school of engineers of Paris-Est (ESIPE) of the Gustave-Eiffel University was created by ministerial decree of March 22, 20183. It is one of the 205 French engineering schools accredited on September 1, 2019 to issue an engineering diploma. It is an internal school of the University Gustave-Eiffel (formerly the University of Paris-Est-Marne-la-Vallée).",
+      "majors": [
+        "Electronics",
+        "Mechanical Engineering",
+        "Civil Engineering"
+      ],
+      "mailAdress": "contact.esipe@u-pem.fr",
+      "phone": 33160957668
+    }
+  },
+  {
+    "id": 21,
+    "ranking": 73,
+    "name": "Episen (ex-Esipe Créteil)",
+    "category": "engineering school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.79519770602984,
+      "latitude": 2.443646340411009
+    },
+    "womanprop": 52,
+    "imagepath": "episen",
+    "website": "https://episen.u-pec.fr/",
+    "fees": 601,
+    "socials": {
+      "instagram": "",
+      "twitter": "",
+      "facebook": ""
+    },
+    "resume": {
+      "approxAddress": "Créteil",
+      "since": 2016,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The Public School of Health and Digital Engineers (EPISEN), previously known as the Paris-Est de Créteil Higher School of Engineers, is one of the 205 French engineering schools accredited on September 1, 2019 to issue a engineering degree.",
+      "majors": [
+        "Health Technology",
+        "Information Systems",
+        "Health Technology"
+      ],
+      "mailAdress": "EPISEN@U-PEC.FR",
+      "phone": 33156726255
+    }
+  },
+  {
+    "id": 22,
+    "ranking": 104,
+    "name": "le Cnam",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.86646578385076,
+      "latitude": 2.3555150762287282
+    },
+    "womanprop": 16,
+    "imagepath": "le_cnam",
+    "website": "https://ecole-ingenieur.cnam.fr/",
+    "fees": 601,
+    "socials": {
+      "instagram": "https://www.instagram.com/lecnam/?hl=fr",
+      "twitter": "https://twitter.com/lecnam?",
+      "facebook": "https://www.facebook.com/LeCnamIDF/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1922,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The Cnam School of Engineering (EiCnam) graduated 1,095 engineering students in 2010. Since 1924, creation of the first national engineering diploma, 30,000 engineers have followed their training at the Conservatory.",
+      "majors": [
+      ],
+      "mailAdress": "eicnam@cnam.fr",
+      "phone": 330158808791
+    }
+  },
+  {
+    "id": 23,
+    "ranking": 3,
+    "name": "MINES ParisTech",
+    "category": "engineering school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.84578973460827,
+      "latitude": 2.3395568962335624
+    },
+    "womanprop": 18,
+    "imagepath": "mines_paristech",
+    "website": "https://www.minesparis.psl.eu/",
+    "fees": 3500,
+    "socials": {
+      "instagram": "https://www.instagram.com/mines_paristech/?hl=fr",
+      "twitter": "https://twitter.com/MINES_ParisTech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/MinesParisTech/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1783,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The École nationale supérieure des mines de Paris, also known under the names of the École des mines de Paris or simply “les Mines”, and more recently of MINES ParisTech, is one of the 205 French engineering schools accredited as of September 1 2019 to deliver an engineering degree. It is part of PSL University as a component establishment. It is historically the first French School of Mines.",
+      "majors": [
+        "Energy",
+        "Innovation"
+      ],
+      "mailAdress": "contact@mines-paristech.fr",
+      "phone": 33140519000
+    }
+  },
+  {
+    "id": 24,
+    "ranking": 1,
+    "name": "HEC",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.75708465219527,
+      "latitude": 2.1687541825296335
+    },
+    "womanprop": 42,
+    "imagepath": "hec",
+    "website": "https://www.hec.edu/en",
+    "fees": 16732,
+    "socials": {
+      "instagram": "https://www.instagram.com/hec_paris/?hl=fr",
+      "twitter": "https://twitter.com/HECParis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/HECParis/"
+    },
+    "resume": {
+      "approxAddress": "Jouy-en-Josas",
+      "since": 1881,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "Established in 1881 by the Paris Chamber of Commerce (CCIP), the École des hautes études commerciales de Paris (HEC) wanted to be in the fields of management and trade what Centrale Paris was in the field of engineering. In order to gain recognition from the academic world, the school offered lessons similar to what was taught in secondary education and few classes in management.",
+      "majors": [
+        "Management",
+        "Law",
+        "Journalism",
+        "Medias"
+      ],
+      "mailAdress": "https://unibuddy.co/embed/hec-paris/colour/009de0/inbox/pre/5e724c954d28a804aa358b31?buddyPosition=0&buddyGroupType=staff",
+      "phone": 330139677000
+    }
+  },
+  {
+    "id": 25,
+    "ranking": 2,
+    "name": "ESSEC",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 49.03354781968338,
+      "latitude": 2.076847259648202
+    },
+    "womanprop": 46,
+    "imagepath": "essec",
+    "website": "https://www.essec.edu/en/",
+    "fees": 17172,
+    "socials": {
+      "instagram": "https://www.instagram.com/essecbs/?hl=fr",
+      "twitter": "https://twitter.com/essec?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/essec/"
+    },
+    "resume": {
+      "approxAddress": "Cergy",
+      "since": 1907,
+      "numberOfStudents": 5585,
+      "numberOfForeigners": -1,
+      "history": "The École Supérieure des Sciences Economiques et Commerciales (ESSEC) was founded in 1907 as an economic institute by Ferdinand Le Pelletier in Paris. Its creation was in agreement with other schools of commerce created by Catholic institutions such as HEC Nord (which later became EDHEC) by the Catholic Institute of Lille or ESSCA by the Institute Catholic of Angers. The Falloux law of 1854 enabled the rise of religious secondary education. The difficult context for the Church, marked by the Dreyfus affair (1895) and the law of separation of Church and State (1905), pushed it to seek to regain influence by diffusing moral values in the business world and by training a new generation of business leaders.",
+      "majors": [
+        "Management",
+        "Marketing"
+      ],
+      "mailAdress": "indigo@essec.fr",
+      "phone": 330134433000
+    }
+  },
+  {
+    "id": 26,
+    "ranking": 3,
+    "name": "ESCP",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.86456611809171,
+      "latitude": 2.3807383504211845
+    },
+    "womanprop": 44,
+    "imagepath": "escp",
+    "website": "https://lp-paris.escp.eu/en/undergraduate/bachelor-in-management-bsc/",
+    "fees": 16892,
+    "socials": {
+      "instagram": "https://www.instagram.com/escpbs/?hl=fr",
+      "twitter": "https://twitter.com/ESCP_bs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ESCPbs/?rf=107990342554768"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1819,
+      "numberOfStudents": 7100,
+      "numberOfForeigners": -1,
+      "history": "The school was established in Paris on 1 December 1819 by two former Napoleonic soldiers, Germain Legret and Amédée Brodart. Germain Legret had opened two business schools in Paris in 1815 and 1818 but they closed their doors rapidly. It was modeled on the first Grande École, the École Polytechnique founded by Lazare Carnot and Gaspard Monge, but was initially much more modest, mainly because it had not been supported by the state. Since the 1820s, the school had international exposure but it was not the only business school open to international students. As the French scholar Adrien Jean-Guy Passant recalls, other business schools as well as some polytechnics with trade departments welcomed foreigners from the start of the 19th century in Europe. It gradually gained in stature and importance during the 19th century and moved to its current Parisian location on Avenue de la République in 1898.",
+      "majors": [
+        "Wealth Management",
+        "Management"
+      ],
+      "mailAdress": "bachelorparis@escp.eu",
+      "phone": 33149232000
+    }
+  },
+  {
+    "id": 27,
+    "ranking": 4,
+    "name": "EDHEC",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.869693595437845,
+      "latitude": 2.3369645596841715
+    },
+    "womanprop": 53,
+    "imagepath": "edhec",
+    "website": "https://www.edhec.edu/en",
+    "fees": 15592,
+    "socials": {
+      "instagram": "https://www.instagram.com/edhec_bschool/?hl=fr",
+      "twitter": "https://twitter.com/EDHEC_BSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/edhec/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1906,
+      "numberOfStudents": 4000,
+      "numberOfForeigners": 1300,
+      "history": "EDHEC Business School was founded in 1906 by entrepreneurs from the North of France. Motte Duthoit, leading textile manufacturer and mayor of Roubaix, France, purchased the land known as “La campagne” on which EDHEC headquarters currently stand. Marcel Tiberghien, a prosperous wool industrialist from Tourcoing, and his wife Madeleine (née Vanoutryve), from a textile family from Roubaix, decided to move out of the town and house their large family in the fresh air of the countryside. The couple purchased a total of 7 hectares in Marcq-en-Baroeul and commissioned one of the greatest architects and landscapers of the time, Jacques Gréber, to design the Anglo-Norman style manor and the English gardens surrounded by century-old beech trees with a pond in the south part of the manor and a rose garden in the west part. He also built in the north part a gardener's house and a stable for three horses. Gréber is known for major projects such as the Fairmont Parkway in Philadelphia, urban plans for Montreal and Marseilles, etc.",
+      "majors": [
+        "Business Management",
+        "Finance",
+        "Business Law"
+      ],
+      "mailAdress": "contact@edhec.edu",
+      "phone": 33153327630
+    }
+  },
+  {
+    "id": 28,
+    "ranking": 5,
+    "name": "SKEMA",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.86085047302373,
+      "latitude": 2.224346186605415
+    },
+    "womanprop": 61,
+    "imagepath": "skema",
+    "website": "https://www.skema.edu/campus/paris-campus",
+    "fees": 14092,
+    "socials": {
+      "instagram": "https://www.instagram.com/skema_bs/?hl=fr",
+      "twitter": "https://twitter.com/SKEMA_BS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/SKEMA.Business.School/"
+    },
+    "resume": {
+      "approxAddress": "Suresnes",
+      "since": 2009,
+      "numberOfStudents": 7500,
+      "numberOfForeigners": -1,
+      "history": "",
+      "majors": [
+        "Finance",
+        "Marketing",
+        "Management",
+        "Business"
+      ],
+      "mailAdress": "https://www.skema.edu/campus/paris-campus/contact-us-paris-campus",
+      "phone": 33171133900
+    }
+  },
+  {
+    "id": 29,
+    "ranking": 8,
+    "name": "Grenoble EM",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.827864634776574,
+      "latitude": 2.3148093191529373
+    },
+    "womanprop": 51,
+    "imagepath": "grenoble_em",
+    "website": "https://en.grenoble-em.com/",
+    "fees": 14732,
+    "socials": {
+      "instagram": "https://www.instagram.com/grenoble_em/?hl=fr",
+      "twitter": "https://twitter.com/grenoble_em?lang=fr",
+      "facebook": "https://www.facebook.com/GrenobleEM/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1984,
+      "numberOfStudents": 8000,
+      "numberOfForeigners": -1,
+      "history": "Grenoble Ecole de Management (GEM) is a French graduate business school renowned for its teaching in Innovation and Management. The consular institution was founded in 1984 in Grenoble, in the Auvergne-Rhone Alpes region, by the Chamber of Commerce and Industry of Grenoble.",
+      "majors": [
+        "Big Data",
+        "Energy Management"
+      ],
+      "mailAdress": "info@grenoble-em.com",
+      "phone": 33476706060
+    }
+  },
+  {
+    "id": 30,
+    "ranking": 10,
+    "name": "Kedge",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.8327322304662,
+      "latitude": 2.3884583724344703
+    },
+    "womanprop": 54,
+    "imagepath": "kedge",
+    "website": "https://student.kedge.edu/",
+    "fees": 12992,
+    "socials": {
+      "instagram": "https://www.instagram.com/kedgebs/?hl=fr",
+      "twitter": "https://twitter.com/KedgeBS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/kedgebs/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1872,
+      "numberOfStudents": 14800,
+      "numberOfForeigners": -1,
+      "history": "KEDGE Business School is a Triple Accredited (AACSB, EQUIS AND AMBA) French business school and Grande École. With campuses in Marseille, Bordeaux, Toulon, Paris, Shanghai and Suzhou, the school is the result of merger between two French business schools: BEM (ESC Bordeaux, founded in 1874) and Euromed (ESC Marseille, founded in 1872).",
+      "majors": [
+        "Marketing",
+        "Management",
+        "Sustainable Finance"
+      ],
+      "mailAdress": "studentoffice.paris@kedgebs.com",
+      "phone": 33187899469
+    }
+  },
+  {
+    "id": 31,
+    "ranking": 8,
+    "name": "Iéseg",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.892605247708424,
+      "latitude": 2.235793911294272
+    },
+    "womanprop": -1,
+    "imagepath": "ieseg",
+    "website": "https://www.ieseg.fr/en/",
+    "fees": 12348,
+    "socials": {
+      "instagram": "https://www.instagram.com/ieseg_school/?hl=fr",
+      "twitter": "https://twitter.com/IESEG?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/ieseg.school.of.management/"
+    },
+    "resume": {
+      "approxAddress": "Puteaux",
+      "since": 1964,
+      "numberOfStudents": 7300,
+      "numberOfForeigners": -1,
+      "history": "IÉSEG School of Management (Institut d'Économie Scientifique Et de Gestion, translated to The Institute of Scientific Economics and Management) is a French grande école and graduate business school, established in 1964 in Lille, France. IÉSEG School of Management is a member of the Université Catholique de Lille consortium, the largest private university in France in terms of student population and endowment. The school has two campuses, one in Lille and one in Paris. IÉSEG holds the Triple Crown of international business school accreditations: EQUIS, AACSB, and AMBA, and is therefore considered part of a limited circle of the best business schools worldwide (less than 1% of business schools have this distinction).",
+      "majors": [
+        "Finance",
+        "Fashion Management",
+        "Big Data"
+      ],
+      "mailAdress": "https://www.ieseg.fr/en/contact-us/",
+      "phone": 33155911010
+    }
+  },
+  {
+    "id": 32,
+    "ranking": 7,
+    "name": "Neoma",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.87796489246861,
+      "latitude": 2.3288825936876916
+    },
+    "womanprop": 56,
+    "imagepath": "neoma",
+    "website": "https://neoma-bs.com/about-neoma/campuses/paris/",
+    "fees": 13592,
+    "socials": {
+      "instagram": "https://www.instagram.com/neomabs/?hl=fr",
+      "twitter": "https://twitter.com/NEOMAbs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/NEOMAbs/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 2013,
+      "numberOfStudents": 9500,
+      "numberOfForeigners": -1,
+      "history": "NEOMA Business School is a French top Grande école, a business and management school recently founded, in 2013 following the merger of Reims Management School (founded in 1928) and Rouen Business School (founded in 1871). NEOMA BS offers a wide range of educational programmes covering all fields of management such as bachelor's degrees, Master in Management, MBA and EMBA programs, specialized MSc programs, a PhD in management, and various executive education offerings. The school is consistently rated by the Financial Times, The Economist and Challenges as one of the top business schools in continental Europe and one of the leading business schools worldwide.",
+      "majors": [
+        "Luxury Management",
+        "Big Data",
+        "Finance"
+      ],
+      "mailAdress": "https://neoma-bs.com/contact/",
+      "phone": 33173069800
+    }
+  },
+  {
+    "id": 33,
+    "ranking": 13,
+    "name": "Toulouse BS",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.84135389449215,
+      "latitude": 2.290227988812565
+    },
+    "womanprop": 60,
+    "imagepath": "toulouse_bs",
+    "website": "https://www.tbs-education.com/about-tbs/campuses/paris-campus-2/",
+    "fees": 13092,
+    "socials": {
+      "instagram": "https://www.instagram.com/tbs_education/?hl=fr",
+      "twitter": "https://twitter.com/tbs_education?lang=fr",
+      "facebook": "https://www.facebook.com/TBSeducation/?rf=111399928878521"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1903,
+      "numberOfStudents": 5000,
+      "numberOfForeigners": 1250,
+      "history": "Toulouse Business School (French: École Supérieure de Commerce de Toulouse; Occitan: Escòla superiora de Comèrci de Tolosa) was founded in 1903 by the Toulouse Chamber of Commerce and Industry, the school's initial vocation was to respond to the needs of the local business community for able business administrators. TBS holds the triple accreditation AACSB/EQUIS/AMBA. It offers courses to the 5600 students and learners trained each year in its initial and continuing training programmes. It has five campuses located in Toulouse, Paris, Barcelona, London and Casablanca.",
+      "majors": [
+        "Management",
+        "Marketing"
+      ],
+      "mailAdress": "info.esc@esc-toulouse.fr",
+      "phone": 33561295000
+    }
+  },
+  {
+    "id": 34,
+    "ranking": 16,
+    "name": "Essca",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.841257154029144,
+      "latitude": 2.2259011768722035
+    },
+    "womanprop": 47,
+    "imagepath": "essca",
+    "website": "https://www.essca.fr/en/essca/our-campuses/essca-paris",
+    "fees": 11117,
+    "socials": {
+      "instagram": "https://www.instagram.com/esscaparis/?hl=fr",
+      "twitter": "https://twitter.com/ESSCA_Ecole?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/essca.paris"
+    },
+    "resume": {
+      "approxAddress": "Boulogne-Billancourt",
+      "since": 1909,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The Angers Business School (Essca) is a large private French business school. Founded in Angers in 1909, the school has campuses in Paris, Aix-en-Provence, Lyon, Bordeaux, Cholet, Budapest and Shanghai. ESSCA offers several training courses: a five-year course (Grande École program) approved by the State and which confers a master's degree, seven master's degrees in science (MSc), a specialized master's degree (MS), a diploma of first cycle (Bac + 3) as well as continuing education programs for professionals.",
+      "majors": [
+        "Finance",
+        "Marketing",
+        "Sustainable Energy"
+      ],
+      "mailAdress": "https://www.essca.fr/en/contacts",
+      "phone": 33241734747
+    }
+  },
+  {
+    "id": 35,
+    "ranking": 14,
+    "name": "ICN",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.89285710317402,
+      "latitude": 2.239671384334161
+    },
+    "womanprop": 53,
+    "imagepath": "icn",
+    "website": "https://www.icn-artem.com/en/paris-cnit-la-defense",
+    "fees": 11592,
+    "socials": {
+      "instagram": "https://www.instagram.com/icnbs/?hl=fr",
+      "twitter": "https://twitter.com/icnbs",
+      "facebook": "https://www.facebook.com/ICNBusinessSchool/"
+    },
+    "resume": {
+      "approxAddress": "La Defense",
+      "since": 1905,
+      "numberOfStudents": 3500,
+      "numberOfForeigners": -1,
+      "history": "ICN Business School is a management school with triple AACSB, EQUIS and AMBA accreditation. Associated with the University of Lorraine, ICN Business School delivers a diploma approved by the Ministry of Higher Education and Research for its programs: Bac + 3 (license degree) for the Bachelor in management and bac + 5 (degree of Master) for the Grande Ecole Program. Founded in 1905 in Nancy, the school now has four campuses: two in France (Nancy and Paris La Défense) and two in Germany (Nuremberg and Berlin). It also has a site dedicated to continuing education in China (Shanghai). A non-profit association under the 1901 law, ICN Bussiness School is EESPIG certified by the French State.",
+      "majors": [
+        "Management"
+      ],
+      "mailAdress": "international@icn-artem.com",
+      "phone": 33354502525
+    }
+  },
+  {
+    "id": 36,
+    "ranking": 21,
+    "name": "EM Normandie",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.855358961085585,
+      "latitude": 2.2728789707035046
+    },
+    "womanprop": 58,
+    "imagepath": "em_normandie",
+    "website": "https://www.em-normandie.com/en/paris-campus",
+    "fees": 11092,
+    "socials": {
+      "instagram": "https://www.instagram.com/emnormandie/?hl=fr",
+      "twitter": "https://twitter.com/EMNormandie?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/EMNormandie/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1871,
+      "numberOfStudents": 5000,
+      "numberOfForeigners": -1,
+      "history": "The Normandy School of Management was created in 1871 by the brothers Jules and Jacques Siegfried under the name of École Supérieure de Commerce du Havre. The two brothers specialize in the cotton trade from India and made a fortune by supplying Europe during the Civil War to replace American cotton. ESC Le Havre is today the second oldest business school still in operation after ESCP Europe (1819).",
+      "majors": [
+        "Management"
+      ],
+      "mailAdress": "https://www.em-normandie.com/en/contact-em-normandie-business-school",
+      "phone": 33175000076
+    }
+  },
+  {
+    "id": 37,
+    "ranking": 18,
+    "name": "EMLV",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.89616648139956,
+      "latitude": 2.235980443022837
+    },
+    "womanprop": -1,
+    "imagepath": "emlv",
+    "website": "https://www.emlv.fr/en/",
+    "fees": 9492,
+    "socials": {
+      "instagram": "https://www.instagram.com/emlv_paris/?hl=fr",
+      "twitter": "https://twitter.com/EMLVparis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/EMLVparis"
+    },
+    "resume": {
+      "approxAddress": "Courbevoie",
+      "since": 1995,
+      "numberOfStudents": -1,
+      "numberOfForeigners": -1,
+      "history": "The EMLV was created in 1995 at the initiative of the Hauts-de-Seine General Council and its president Charles Pasqua. Since the start of the 2015 school year, the school has offered a double-degree in engineering and management with ESILV from the first year.",
+      "majors": [
+        "Digital Marketing",
+        "Finance"
+      ],
+      "mailAdress": "https://www.emlv.fr/en/",
+      "phone": 33141167564
+    }
+  },
+  {
+    "id": 38,
+    "ranking": 19,
+    "name": "Institut Mines-Télécom BS",
+    "category": "business school",
+    "intramuros": 0,
+    "coordinates": {
+      "longitude": 48.6252212033774,
+      "latitude": 2.4430116996661044
+    },
+    "womanprop": 61,
+    "imagepath": "institut_mines-telecom_bs",
+    "website": "https://www.imt-bs.eu/en",
+    "fees": 7842,
+    "socials": {
+      "instagram": "https://www.instagram.com/imt_bs/?hl=fr",
+      "twitter": "https://twitter.com/imt_bs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/imtbs/"
+    },
+    "resume": {
+      "approxAddress": "Evry",
+      "since": 1979,
+      "numberOfStudents": 13600,
+      "numberOfForeigners": -1,
+      "history": "Institut Mines-Télécom Business School, also called Télécom École de management until 2018, is a French business school based in Évry-Courcouronnes in Essonne. Since 2019, the school has also had premises in the 15th arrondissement of Paris, Villa Thoréton. Institut Mines-Télécom Business School is the management school of the Institut Mines-Télécom. She is a member of the “Association to advance collegiate schools of business (AACSB)”, of the CGE (Conférence des Grandes Ecoles) and of the FNEGE. Its programs are AACSB and AMBA accredited for the Grande École program. The school shares its campus with the Télécom SudParis engineering school, a member of the Institut Polytechnique de Paris. In 2020, the school has more than 1,500 students and more than 70 permanent teacher-researchers. The school has been managed by Denis Guibard since 2014.",
+      "majors": [
+        "Management",
+        "Aeromat Innovation"
+      ],
+      "mailAdress": "execed@imt-bs.eu",
+      "phone": 33160764111
+    }
+  },
+  {
+    "id": 39,
+    "ranking": 25,
+    "name": "ISC",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.89276256436523,
+      "latitude": 2.3010108536514977
+    },
+    "womanprop": 57,
+    "imagepath": "isc",
+    "website": "https://iscparis.com/en/",
+    "fees": 11392,
+    "socials": {
+      "instagram": "https://www.instagram.com/iscparis/?hl=fr",
+      "twitter": "https://twitter.com/groupe_iscparis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/groupeiscparis"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1963,
+      "numberOfStudents": 2500,
+      "numberOfForeigners": -1,
+      "history": "The ISC Paris Group, an independent private French higher education group, has developed its activities around 2 brands: ISC Paris Grande École, a business and management school recognized by the State, member of the Conférence des grandes écoles and AACSB, AMBA and EPAS accredited as well as ISC Paris Global Programs, a brand offering specialized and professional training from Bac + 3 to Bac + 5 and in Executive Education. The ISC Paris Group is located in Paris in the 17th arrondissement of Paris, at 22, boulevard du Fort-de-Vaux and in Orléans, at 24, rue Jeanne D’Arc. The Paris campus is served by Porte de Clichy metro station (RER C and metro line 13) as well as Clichy - Levallois station (Transilien line L) and Pereire - Levallois station (RER C and metro line 3) . As for the Orleans campus, it is accessible via line A of the Orleans tramway and line B as well as by bus, Boulevard Alexandre Martin stop.",
+      "majors": [
+        "Managed",
+        "Audit & Control"
+      ],
+      "mailAdress": "lvalandro@iscparis.com",
+      "phone": 33140537923
+    }
+  },
+  {
+    "id": 40,
+    "ranking": 21,
+    "name": "Inseec",
+    "category": "business school",
+    "intramuros": 1,
+    "coordinates": {
+      "longitude": 48.87707082575996,
+      "latitude": 2.3698994798577555
+    },
+    "womanprop": 63,
+    "imagepath": "inseec",
+    "website": "https://grandeecole.inseec.com/en/",
+    "fees": 10042,
+    "socials": {
+      "instagram": "https://www.instagram.com/inseec_bs/?hl=fr",
+      "twitter": "https://twitter.com/inseec_bs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "facebook": "https://www.facebook.com/inseec.bs/"
+    },
+    "resume": {
+      "approxAddress": "Paris",
+      "since": 1975,
+      "numberOfStudents": 25000,
+      "numberOfForeigners": -1,
+      "history": "The Grande Ecole INSEEC School of Business & Economics grew at a fast pace, and especially internationally, underpinned by Career Education Corporation until October 24, 2013. its Franco-American Business School: the MBA Institute - American BBA INSEEC Campus in Paris, which prepares French and International Students for a MBA in the United States, enabling them to obtain at the end a diploma recognized both in Europe and in the US. Strong bounds have been created with several American Universities such as: Emory (Atlanta), Indiana University of Pennsylvania or San Francisco State University allowing students to dive into American Campuses.",
+      "majors": [
+        "Management",
+        "Finance"
+      ],
+      "mailAdress": "accueil@inseec.com",
+      "phone": 33142099917
+    }
+  }
+]
