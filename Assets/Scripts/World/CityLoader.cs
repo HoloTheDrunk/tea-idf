@@ -130,8 +130,10 @@ namespace World
                 mesh.vertices = building.Vertices.ToArray();
                 mesh.uv = new Vector2[building.Vertices.Count]; //TODO: find how to calculate proper UVs
                 mesh.triangles = building.Triangles.ToArray();
+                mesh.RecalculateNormals();
+                mesh.RecalculateBounds();
 
-                // Should never be null but I need Rider to stop nagging me with that orange underline
+                // Shouldn't ever be null but I need Rider to stop nagging me with that orange underline
                 if (newBuilding != null)
                 {
                     newBuilding.GetComponent<MeshFilter>().mesh = mesh;
